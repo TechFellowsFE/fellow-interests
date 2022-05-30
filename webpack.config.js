@@ -23,7 +23,9 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            template: 'src/index.html'
+        })
     ],
     output: {
         filename: '[name].bundle.js',
